@@ -1,5 +1,14 @@
+import { BrowserRouter, Router } from "react-router-dom";
+import Menu from "./components/menu/Menu";
+
 const App = () => {
-	return <h1>Núcleo de la aplicación</h1>;
+	return (
+		<BrowserRouter>
+			<Menu />
+			
+			<Router />
+		</BrowserRouter>
+	);
 };
 
 export default App;
