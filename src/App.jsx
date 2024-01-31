@@ -1,11 +1,14 @@
-import { BrowserRouter, Router } from "react-router-dom";
-import Menu from "./components/menu/Menu";
+import { BrowserRouter } from 'react-router-dom';
+import { GlobalStyles } from './styles/global-styles';
+import Router from './router/Router';
 
 const App = () => {
+
 	return (
+		
 		<BrowserRouter>
-			<Menu />
-			
+			<GlobalStyles />
+
 			<Router />
 		</BrowserRouter>
 	);
