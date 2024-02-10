@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { FONTS } from './fonts';
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -6,7 +7,6 @@ export const GlobalStyles = createGlobalStyle`
   *::before{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
   }
 
   img{
@@ -15,12 +15,19 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   body{
-    background-image: url("./public/assets/images/background-stars.svg");
+    background-image: url('assets/images/background-stars.svg');
+    font-family: ${FONTS.ffSecundary};
   }
 
   a{
     text-decoration: none;
     color: inherit;
+  }
+
+  h1,
+  h2,
+  h3{
+    font-family: ${FONTS.ffPrimary};
   }
 
   ul{

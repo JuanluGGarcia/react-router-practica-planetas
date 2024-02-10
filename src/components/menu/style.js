@@ -3,8 +3,7 @@ import styled from "styled-components";
 const StyledHeaderContainer = styled.div`
     width: 90%;
     height: 6rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,13 +11,13 @@ const StyledHeaderContainer = styled.div`
 
 `;
 
-const StyledLogo = styled.h2`
+// const StyledLogo = styled.h2`
 
-`;
+// `;
 
-const StyledNav = styled.nav`
+// const StyledNav = styled.nav`
 
-`;
+// `;
 
 const StyledUl = styled.ul`
     display: flex;
@@ -26,4 +25,5 @@ const StyledUl = styled.ul`
 
 `;
 
-export { StyledHeaderContainer, StyledLogo, StyledNav, StyledUl };
+export { StyledHeaderContainer, StyledUl };
+// export { StyledHeaderContainer, StyledLogo, StyledNav, StyledUl };
