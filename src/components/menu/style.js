@@ -36,6 +36,4 @@ const StyledLink = styled(Link)`
     }
 `;
 
-
-// export { StyledHeaderContainer, StyledUl, StyledLink };
 export { StyledHeaderContainer, StyledLogo, StyledNav, StyledUl, StyledLink };
