@@ -3,6 +3,7 @@ import { PLANETS_INFO } from '../constants/planetsInfo';
 import {
 	StyledButton,
 	StyledButtonsContainer,
+	StyledHiddenImage,
 	StyledInformation,
 	StyledInformationText,
 	StyledInformationTitle,
@@ -29,6 +30,11 @@ const Planet = ({ planet }) => {
 					<StyledPlanet>
 						<img src={PLANETS_INFO[planet].images[info]} alt='' />
 					</StyledPlanet>
+					<StyledHiddenImage>
+							{info === 2 && (
+								<img src={PLANETS_INFO[planet].images[3]} alt='' />
+							)}
+						</StyledHiddenImage>
 					{/* Cabecera información planeta */}
 					<StyledInformation>
 						<StyledInformationTitle>
@@ -39,7 +45,7 @@ const Planet = ({ planet }) => {
 						</StyledInformationText>
 
 						<StyledSpan>
-							Source: <StyledWikipedia>Wikipedia</StyledWikipedia>
+							Source: <StyledWikipedia>Wikipedia <img src="assets/images/icon-source.svg" alt="icon-source" /></StyledWikipedia>
 						</StyledSpan>
 						{/* Botones */}
 						<StyledButtonsContainer>

@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   img{
-    display: block;
+    display: inline-block;
     max-width: 100%;
   }
   
