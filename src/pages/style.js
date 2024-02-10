@@ -8,6 +8,19 @@ const StyledWrapper = styled.div`
 	margin-block: 1rem;
 `;
 
+const StyledImagePlanetContainer = styled.div`
+	/* background-color: orange; */
+	position: relative;
+	/* margin-left: 100px; */
+	width: 70%;
+	max-width: 600px;
+	max-height: 600px;
+	/* max-width: 400px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
+
 const StyledPlanetInformation = styled.div`
 	width: 100%;
 	display: flex;
@@ -18,10 +31,10 @@ const StyledPlanetInformation = styled.div`
 `;
 
 const StyledPlanet = styled.div`
-	margin-left: 100px;
+	/* margin-left: 100px; */
 	width: 70%;
-	max-width: 300px;
-	max-height: 300px;
+	max-width: 400px;
+	max-height: 380px;
 	/* max-width: 400px; */
 	display: flex;
 	justify-content: center;
@@ -32,8 +45,8 @@ const StyledPlanet = styled.div`
 const StyledHiddenImage = styled.div`
 	position: absolute;
 	width: 90px;
-	left: 32.5%;
-	top: 300px;
+	left: 50%;
+	top: 75%;
 	transform: translateX(-50%);
 `;
 
@@ -85,12 +98,12 @@ const StyledButton = styled.button`
 	text-align: left;
 	width: 100%;
 	border: 1px solid ${COLORS.hover};
-	padding: 15px 25px;
+	padding: 10px 15px;
 	font-family: ${FONTS.ffPrimary};
 	font-weight: 100;
 	font-size: 1.1.rem;
 	background-color: transparent;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.2rem;
 	cursor: pointer;
 	background-color: ${({ $active, $color }) =>
 		$active ? $color : 'transparent'};
@@ -111,7 +124,7 @@ const StyledPlanetNumbers = styled.div`
 const StyledPlanetStatsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding: 10px 20px;
+	padding: 5px 20px;
 	justify-content: center;
 	border: 1px solid grey;
 	width: 250px;
@@ -133,6 +146,7 @@ const StyledPlanetInfoStats = styled.h4`
 
 export {
 	StyledWrapper,
+	StyledImagePlanetContainer,
 	StyledPlanetInformation,
 	StyledPlanet,
 	StyledHiddenImage,

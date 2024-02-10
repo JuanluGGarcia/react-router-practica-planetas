@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledHeaderContainer = styled.div`
-    width: 90%;
+    width: 100%;
+    padding-inline: 5%;
     height: 3rem;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
+    border-bottom: 1px solid #838391;
 `;
 
 const StyledLogo = styled.h2`
