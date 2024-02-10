@@ -3,17 +3,18 @@ import styled from "styled-components";
 
 const StyledHeaderContainer = styled.div`
     width: 90%;
-    height: 6rem;
+    height: 3rem;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
 
 `;
 
 const StyledLogo = styled.h2`
-
+    font-size: 1.75rem;
+    /* margin: 0; */
 `;
 
 const StyledNav = styled.nav`
@@ -27,7 +28,12 @@ const StyledUl = styled.ul`
 `;
 
 const StyledLink = styled(Link)`
-	color: ${({ $color }) => $color};
+	border-top: 5px solid transparent;
+    padding-top: .5rem;
+    &:hover {
+        /* border-top-width: 2px; */
+        border-top-color: ${({ $color }) => $color};
+    }
 `;
 
 

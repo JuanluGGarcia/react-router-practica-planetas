@@ -1,6 +1,6 @@
 export const COLORS = {
 	backgroundColor: '#070724',
-	textColor: '#FFFFFF',
+	textColor: '#FFF',
 	textColorTitle: '#838391',
 	MERCURY: '#419EBB',
 	VENUS: '#EDA249',
@@ -10,5 +10,5 @@ export const COLORS = {
 	SATURN: '#CD5120',
 	URANUS: '#1EC2A4',
 	NEPTUNE: '#2D68F0',
-	hover: '#38384f'
+	hover: '#38384F'
 };

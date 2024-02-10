@@ -1,4 +1,4 @@
-import { COLORS } from "../styles/colors";
+import { COLORS } from '../styles/colors';
 
 const MERCURY = {
 	planetName: 'MERCURY',
@@ -15,10 +15,10 @@ const MERCURY = {
 	],
 
 	stats: [
-		{ props: 'ROTATION TIME', value: '58.6 DAYS' },
-		{ props: 'REVOLUTION TIME', value: '87.97 DAYS' },
-		{ props: 'RADIUS', value: '2,439.7 KM' },
-		{ props: 'AVERAGE TEMP.', value: '430°C' }
+		{ name: 'ROTATION TIME', value: '58.6 DAYS' },
+		{ name: 'REVOLUTION TIME', value: '87.97 DAYS' },
+		{ name: 'RADIUS', value: '2,439.7 KM' },
+		{ name: 'AVERAGE TEMP.', value: '430°C' }
 	],
 	color: COLORS.MERCURY
 };
@@ -38,10 +38,10 @@ const VENUS = {
 	],
 	tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
 	stats: [
-		{ props: 'ROTATION TIME', value: '243 DAYS' },
-		{ props: 'REVOLUTION TIME', value: '224.7 DAYS' },
-		{ props: 'RADIUS', value: '6,051.8 KM' },
-		{ props: 'AVERAGE TEMP.', value: '471°C' }
+		{ name: 'ROTATION TIME', value: '243 DAYS' },
+		{ name: 'REVOLUTION TIME', value: '224.7 DAYS' },
+		{ name: 'RADIUS', value: '6,051.8 KM' },
+		{ name: 'AVERAGE TEMP.', value: '471°C' }
 	],
 	color: COLORS.VENUS
 };
@@ -61,12 +61,12 @@ const EARTH = {
 	],
 	tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
 	stats: [
-		{ props: 'ROTATION TIME', value: '0.99 DAYS' },
-		{ props: 'REVOLUTION TIME', value: '365.26 DAYS' },
-		{ props: 'RADIUS', value: '6,371 KM' },
-		{ props: 'AVERAGE TEMP.', value: '16°C' }
+		{ name: 'ROTATION TIME', value: '0.99 DAYS' },
+		{ name: 'REVOLUTION TIME', value: '365.26 DAYS' },
+		{ name: 'RADIUS', value: '6,371 KM' },
+		{ name: 'AVERAGE TEMP.', value: '16°C' }
 	],
-	color:COLORS.EARTH
+	color: COLORS.EARTH
 };
 
 const MARS = {
@@ -84,10 +84,10 @@ const MARS = {
 	],
 	tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
 	stats: [
-		{ props: 'ROTATION TIME', value: '1.03 DAYS' },
-		{ props: 'REVOLUTION TIME', value: '1.88 YEARS' },
-		{ props: 'RADIUS', value: '3,389.5 KM' },
-		{ props: 'AVERAGE TEMP.', value: '−28°C' }
+		{ name: 'ROTATION TIME', value: '1.03 DAYS' },
+		{ name: 'REVOLUTION TIME', value: '1.88 YEARS' },
+		{ name: 'RADIUS', value: '3,389.5 KM' },
+		{ name: 'AVERAGE TEMP.', value: '−28°C' }
 	],
 	color: COLORS.MARS
 };
@@ -107,10 +107,10 @@ const JUPITER = {
 	],
 	tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
 	stats: [
-		{ props: 'ROTATION TIME', value: '9.93 HOURS' },
-		{ props: 'REVOLUTION TIME', value: '11.86 YEARS' },
-		{ props: 'RADIUS', value: '69,911 KM' },
-		{ props: 'AVERAGE TEMP.', value: '-108°C' }
+		{ name: 'ROTATION TIME', value: '9.93 HOURS' },
+		{ name: 'REVOLUTION TIME', value: '11.86 YEARS' },
+		{ name: 'RADIUS', value: '69,911 KM' },
+		{ name: 'AVERAGE TEMP.', value: '-108°C' }
 	],
 	color: COLORS.JUPITER
 };
@@ -130,10 +130,10 @@ const SATURN = {
 	],
 	tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
 	stats: [
-		{ props: 'ROTATION TIME', value: '10.8 HOURS' },
-		{ props: 'REVOLUTION TIME', value: '29.46 YEARS' },
-		{ props: 'RADIUS', value: '58,232 KM' },
-		{ props: 'AVERAGE TEMP.', value: '-138°C' }
+		{ name: 'ROTATION TIME', value: '10.8 HOURS' },
+		{ name: 'REVOLUTION TIME', value: '29.46 YEARS' },
+		{ name: 'RADIUS', value: '58,232 KM' },
+		{ name: 'AVERAGE TEMP.', value: '-138°C' }
 	],
 	color: COLORS.SATURN
 };
@@ -153,10 +153,10 @@ const URANUS = {
 	],
 	tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
 	stats: [
-		{ props: 'ROTATION TIME', value: '17.2 HOURS' },
-		{ props: 'REVOLUTION TIME', value: '84 YEARS' },
-		{ props: 'RADIUS', value: '25,362 KM' },
-		{ props: 'AVERAGE TEMP.', value: '-195°C' }
+		{ name: 'ROTATION TIME', value: '17.2 HOURS' },
+		{ name: 'REVOLUTION TIME', value: '84 YEARS' },
+		{ name: 'RADIUS', value: '25,362 KM' },
+		{ name: 'AVERAGE TEMP.', value: '-195°C' }
 	],
 	color: COLORS.URANUS
 };
@@ -176,10 +176,10 @@ const NEPTUNE = {
 	],
 	tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
 	stats: [
-		{ props: 'ROTATION TIME', value: '16.08 HOURS' },
-		{ props: 'REVOLUTION TIME', value: '164.79 YEARS' },
-		{ props: 'RADIUS', value: '24,622 KM' },
-		{ props: 'AVERAGE TEMP.', value: '-201°C' }
+		{ name: 'ROTATION TIME', value: '16.08 HOURS' },
+		{ name: 'REVOLUTION TIME', value: '164.79 YEARS' },
+		{ name: 'RADIUS', value: '24,622 KM' },
+		{ name: 'AVERAGE TEMP.', value: '-201°C' }
 	],
 	color: COLORS.NEPTUNE
 };

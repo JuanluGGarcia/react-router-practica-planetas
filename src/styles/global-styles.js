@@ -15,8 +15,12 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   body{
+    color: #fff;
+    background-color: #000;
     background-image: url('assets/images/background-stars.svg');
+    font-size: .875rem;
     font-family: ${FONTS.ffSecundary};
+    height: 100vh;
   }
 
   a{

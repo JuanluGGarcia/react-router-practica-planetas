@@ -39,7 +39,7 @@ export const PLANETS_MENU = [
 	},
 	{
 		id: v4(),
-		planetName: 'NEPTUNO',
-		path: '/neptuno'
+		planetName: 'NEPTUNE',
+		path: '/neptune'
 	}
 ];

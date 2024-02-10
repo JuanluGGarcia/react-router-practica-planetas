@@ -1,37 +1,85 @@
-// import Header from '../components/header/Header';
-// import Main from '../components/main/Main';
-
-import { PLANETS_INFO } from "../constants/planetsInfo";
-import { StyledInformation, StyledInformationText, StyledInformationTitle, StyledPlanet, StyledPlanetInformation, StyledPlanetNumbers, StyledWrapper } from "./style";
+import { useState } from 'react';
+import { PLANETS_INFO } from '../constants/planetsInfo';
+import {
+	StyledButton,
+	StyledButtonsContainer,
+	StyledInformation,
+	StyledInformationText,
+	StyledInformationTitle,
+	StyledPlanet,
+	StyledPlanetInfoStats,
+	StyledPlanetInformation,
+	StyledPlanetNumbers,
+	StyledPlanetStatsContainer,
+	StyledPlanetTitleStats,
+	StyledSpan,
+	StyledWikipedia,
+	StyledWrapper
+} from './style';
+import { BUTTONS } from '../constants/buttons';
 
 const Planet = ({ planet }) => {
-    // console.log(planet)
+	const [info, setInfo] = useState(0);
+
 	return (
 		<main>
 			<StyledWrapper>
-				<StyledPlanetInformation>
+				<StyledPlanetInformation>	
+					{/* Imagen planeta */}
 					<StyledPlanet>
-						<img src={PLANETS_INFO[planet].images[0]} alt="" />
+						<img src={PLANETS_INFO[planet].images[info]} alt='' />
 					</StyledPlanet>
+					{/* Cabecera información planeta */}
 					<StyledInformation>
-						<StyledInformationTitle>{PLANETS_INFO[planet].planetName}</StyledInformationTitle>
-						<StyledInformationText>{PLANETS_INFO[planet].texts[0]}</StyledInformationText>
-						<button>boton 1</button>
-						<button>boton 2</button>
-						<button>boton 3</button>
-						{/* <Button
-							backgroundColor={PLANETS[planetName].color}
-							activeButton={activeButton}
-							setActiveButton={setActiveButton}
-						/> */}
+						<StyledInformationTitle>
+							{PLANETS_INFO[planet].planetName}
+						</StyledInformationTitle>
+						<StyledInformationText>
+							{PLANETS_INFO[planet].texts[info]}
+						</StyledInformationText>
+
+						<StyledSpan>
+							Source: <StyledWikipedia>Wikipedia</StyledWikipedia>
+						</StyledSpan>
+						{/* Botones */}
+						<StyledButtonsContainer>
+							{BUTTONS.map((button, index) => {
+								return (
+									<StyledButton
+										key={button.id}
+										onClick={() => changeInfo(setInfo, index)}
+										$active={index === info}
+										$color={PLANETS_INFO[planet].color}
+									>
+										{button.name}
+									</StyledButton>
+								);
+							})}
+						</StyledButtonsContainer>
 					</StyledInformation>
 				</StyledPlanetInformation>
 
-				<StyledPlanetNumbers></StyledPlanetNumbers>
+				{/* Estadisticas de los planetas */}
+				<StyledPlanetNumbers>
+					{PLANETS_INFO[planet].stats.map(item => {
+
+						return (
+
+						<StyledPlanetStatsContainer key={item.name}>
+							<StyledPlanetTitleStats>{item.name}</StyledPlanetTitleStats>
+							<StyledPlanetInfoStats>{item.value}</StyledPlanetInfoStats>
+						</StyledPlanetStatsContainer>
+							
+						);
+					})}
+				</StyledPlanetNumbers>
 			</StyledWrapper>
 		</main>
 	);
-	
+};
+
+const changeInfo = (setInfo, index) => {
+	setInfo(index);
 };
 
 export default Planet;
