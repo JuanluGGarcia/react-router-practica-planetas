@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledHeaderContainer = styled.div`
@@ -11,13 +12,13 @@ const StyledHeaderContainer = styled.div`
 
 `;
 
-// const StyledLogo = styled.h2`
+const StyledLogo = styled.h2`
 
-// `;
+`;
 
-// const StyledNav = styled.nav`
+const StyledNav = styled.nav`
 
-// `;
+`;
 
 const StyledUl = styled.ul`
     display: flex;
@@ -25,5 +26,10 @@ const StyledUl = styled.ul`
 
 `;
 
-export { StyledHeaderContainer, StyledUl };
-// export { StyledHeaderContainer, StyledLogo, StyledNav, StyledUl };
+const StyledLink = styled(Link)`
+	color: ${({ $color }) => $color};
+`;
+
+
+// export { StyledHeaderContainer, StyledUl, StyledLink };
+export { StyledHeaderContainer, StyledLogo, StyledNav, StyledUl, StyledLink };

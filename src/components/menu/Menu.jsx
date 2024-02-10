@@ -1,28 +1,37 @@
-import { Link } from "react-router-dom";
-import { PLANETS_MENU } from "../../constants/planetsMenu";
-import { StyledHeaderContainer, StyledLogo, StyledNav, StyledUl } from "./style";
+import { PLANETS_MENU } from '../../constants/menu';
+import {
+	StyledHeaderContainer,
+	StyledLink,
+	StyledLogo,
+	StyledNav,
+	StyledUl
+} from './style';
+import { COLORS } from '../../styles/colors';
 
-const Header = () => {
-    return (
-        
-            <header>
-                <StyledHeaderContainer>
-                    <StyledLogo>THE PLANETS</StyledLogo>
-                    <StyledNav>
-                        <StyledUl>
-                            {PLANETS_MENU.map(menu => {
-                                return (
-                                    <li key={menu.id}>
-                                        <Link to={menu.path}>{menu.name}</Link>
-                                    </li>
-                                );
-                            })}
-                        </StyledUl>
-                    </StyledNav>
-                </StyledHeaderContainer>
-            </header>
-    );
+const Menu = () => {
+	return (
+		<header>
+			<StyledHeaderContainer>
+				<StyledLogo>THE PLANETS</StyledLogo>
+				<StyledNav>
+					<StyledUl>
+						{PLANETS_MENU.map(menu => {
+							return (
+								<li key={menu.id}>
+									<StyledLink 
+										to={menu.path}
+										$color={COLORS[menu.planetName]}
+									>
+										{menu.planetName}
+									</StyledLink>
+								</li>
+							);
+						})}
+					</StyledUl>
+				</StyledNav>
+			</StyledHeaderContainer>
+		</header>
+	);
 };
 
-
-export default Header;
+export default Menu;

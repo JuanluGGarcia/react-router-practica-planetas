@@ -1,18 +1,17 @@
-import { Route, Routes } from 'react-router-dom';
-import { PLANETS_MENU } from '../constants/planetsMenu';
-import Planet from '../pages/Planet';
+import { Route, Routes } from "react-router-dom";
+import { PLANETS_MENU } from "../constants/menu";
+import Planet from "../pages/Planet";
 
 
 const Router = () => {
 	return (
 		<Routes>
-			{PLANETS_MENU.map(menuPlanet => {
-
+			{PLANETS_MENU.map(planet => {
 				return (
 					<Route
-						key={menuPlanet.id}
-						path={menuPlanet.path}
-						element={<Planet planet={menuPlanet.planetName} />}
+						key={planet.id}
+						path={planet.path}
+						element={<Planet planet={planet.planetName} />} 
 					/>
 				);
 			})}

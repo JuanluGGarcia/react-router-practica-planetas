@@ -11,11 +11,10 @@ import {
 } from './style';
 // import Button from '../button/Button';
 // import { BUTTONS } from '../../constants/buttons';
-import { PLANETS } from '../../constants/planetsInfo';
+// import { PLANETS } from '../../constants/planetsInfo';
 
 const Main = ({ planetName }) => {
-	const currentPlanet = PLANETS[planetName];
-	console.log(currentPlanet)
+	
 
 	return (
 		<main>
