@@ -19,6 +19,7 @@ import {
 	StyledWrapper
 } from './style';
 import { BUTTONS } from '../constants/buttons';
+import { COLORS } from '../styles/colors';
 
 const Planet = ({ planet }) => {
 	const [info, setInfo] = useState(0);
@@ -58,7 +59,7 @@ const Planet = ({ planet }) => {
 										key={button.id}
 										onClick={() => changeInfo(setInfo, index)}
 										$active={index === info}
-										$color={PLANETS_INFO[planet].color}
+										$color={COLORS[planet]}
 									>
 										{button.name}
 									</StyledButton>

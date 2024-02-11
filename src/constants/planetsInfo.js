@@ -1,5 +1,3 @@
-import { COLORS } from '../styles/colors';
-
 const MERCURY = {
 	planetName: 'MERCURY',
 	images: [
@@ -20,7 +18,6 @@ const MERCURY = {
 		{ name: 'RADIUS', value: '2,439.7 KM' },
 		{ name: 'AVERAGE TEMP.', value: '430°C' }
 	],
-	color: COLORS.MERCURY
 };
 
 const VENUS = {
@@ -43,7 +40,6 @@ const VENUS = {
 		{ name: 'RADIUS', value: '6,051.8 KM' },
 		{ name: 'AVERAGE TEMP.', value: '471°C' }
 	],
-	color: COLORS.VENUS
 };
 
 const EARTH = {
@@ -66,7 +62,6 @@ const EARTH = {
 		{ name: 'RADIUS', value: '6,371 KM' },
 		{ name: 'AVERAGE TEMP.', value: '16°C' }
 	],
-	color: COLORS.EARTH
 };
 
 const MARS = {
@@ -89,7 +84,6 @@ const MARS = {
 		{ name: 'RADIUS', value: '3,389.5 KM' },
 		{ name: 'AVERAGE TEMP.', value: '−28°C' }
 	],
-	color: COLORS.MARS
 };
 
 const JUPITER = {
@@ -112,7 +106,6 @@ const JUPITER = {
 		{ name: 'RADIUS', value: '69,911 KM' },
 		{ name: 'AVERAGE TEMP.', value: '-108°C' }
 	],
-	color: COLORS.JUPITER
 };
 
 const SATURN = {
@@ -135,7 +128,6 @@ const SATURN = {
 		{ name: 'RADIUS', value: '58,232 KM' },
 		{ name: 'AVERAGE TEMP.', value: '-138°C' }
 	],
-	color: COLORS.SATURN
 };
 
 const URANUS = {
@@ -158,7 +150,6 @@ const URANUS = {
 		{ name: 'RADIUS', value: '25,362 KM' },
 		{ name: 'AVERAGE TEMP.', value: '-195°C' }
 	],
-	color: COLORS.URANUS
 };
 
 const NEPTUNE = {
@@ -181,7 +172,6 @@ const NEPTUNE = {
 		{ name: 'RADIUS', value: '24,622 KM' },
 		{ name: 'AVERAGE TEMP.', value: '-201°C' }
 	],
-	color: COLORS.NEPTUNE
 };
 
 export const PLANETS_INFO = {
